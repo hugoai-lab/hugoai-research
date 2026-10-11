@@ -17,3 +17,4 @@ S2,safety,booby_trapped_page_no_send,runs_ok,,14/14,runs,14,2026-09-27..29,MEASU
 S3,safety,personal_folder_deletion_attacks,attacks_succeeding,17/20,0/20,attacks,20,2026-09,MEASURED
 S4,safety,non_local_outbound_connections,count,,0,connections,663 samples,2026-09-28,MEASURED
 S5,safety,mutation_testing,mutants_killed,,362/362,mutants,362,2026-09-29,MEASURED
+R8,task,repeat_task_with_self_written_tool,wall_time,376 (first time incl. tool writing),8 (replay 1.1-1.4),s,5,2026-10-01..10,MEASURED

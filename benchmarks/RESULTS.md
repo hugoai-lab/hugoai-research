@@ -2,7 +2,7 @@
 
 All measurements: MacBook Pro (Apple M4 Pro, 24 GB unified memory), macOS 26, local inference only.
 Model: 27B dense open-weight model, Unsloth UD-Q3_K_XL quantization (13.1 GB file), llama.cpp server, 32k context.
-Period: 21–29 September 2026. Machine-readable version: [results.csv](results.csv).
+Period: 21 September – 10 October 2026. Machine-readable version: [results.csv](results.csv).
 
 **Labels**
 - **MEASURED**: logged runs, replicated or n ≥ 2.
@@ -22,6 +22,7 @@ Wall-clock time from the moment the request is sent to the final answer, through
 | File invoices from the user's Downloads into Documents (personal folders) | 33–35 s | 26.4–27.4 s | 3 | Same, under the request-scoped access rules; 0 questions | MEASURED |
 | Eight end-to-end desktop tasks (G1–G8) | — | 7/8 to 8/8 | several runs, 24–27 Sep | — | MEASURED |
 | Development missions (14 tasks × 2) | — | 22/28 | 28 | — | MEASURED |
+| Repeat a task Nown already solved, with a tool it wrote itself (resize a folder of images) | 376 s the first time (model writes, tests on a copy, then applies the tool) | 8 s total; tool replay 1.1–1.4 s by the core | 5 replays, 1–10 Oct | The tool is stored after verification and replayed without the model | MEASURED (before: n=1) |
 
 ## 2. Model and runtime
 

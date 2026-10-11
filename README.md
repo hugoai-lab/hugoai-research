@@ -1,11 +1,44 @@
-# HugoAI Research
+<p align="center"><img src="assets/banner.jpg" alt="HugoAI — Nown, an intelligent program that lives inside your computer" width="100%"></p>
 
-**HugoAI is an AI research lab working on making frontier-class general intelligence radically more efficient, with the long-term goal of running AGI-class systems directly on everyday personal devices.**
+<h1 align="center">HugoAI Research</h1>
+
+<p align="center"><b>An AI research lab building general intelligence that runs on the computer you already own — locally, privately, fast.</b></p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/runs-100%25%20local-0b101e?style=flat-square" alt="100% local">
+<img src="https://img.shields.io/badge/cloud%20inference-none-d6b06c?style=flat-square" alt="no cloud inference">
+<img src="https://img.shields.io/badge/hardware-MacBook%20Pro%20M4%20Pro%2C%2024%20GB-3b4050?style=flat-square" alt="hardware">
+<img src="https://img.shields.io/badge/model-27B%20open--weight%2C%203--bit-3b4050?style=flat-square" alt="model">
+<img src="https://img.shields.io/badge/safety%20mutants%20killed-362%2F362-2e7d4f?style=flat-square" alt="mutation testing">
+<img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey?style=flat-square" alt="license">
+</p>
+
+<p align="center"><a href="https://hugoai.fr">Website</a> · <a href="https://hugoai.fr/media/nown-demo-v15.mp4">Demo video</a> · <a href="demo/README.md">Demo script</a> · <a href="benchmarks/RESULTS.md">Results</a> · <a href="docs/METHODOLOGY.md">Methodology</a> · <a href="ROADMAP.md">Roadmap</a> · <a href="#contact">Contact</a></p>
+
+---
+
+## Nown in one minute
+
+**Nown is an intelligent program that lives inside your computer.** You type what you want in plain language; it drives files, applications and the web from the inside, checks its own work, and answers in one sentence. When it lacks a tool, it **writes one itself**, tests it on a copy, and reuses it instantly next time. Everything runs on the laptop: **no data leaves the machine.**
+
+<p align="center"><a href="https://hugoai.fr/media/nown-demo-v15.mp4"><img src="assets/demo-thumbnail.jpg" alt="Watch the Nown demo (2 min 43)" width="80%"></a></p>
+
+| | |
+|:---:|:---:|
+| <img src="assets/scene-1-invoices.jpg" alt="Filing 20 invoices"><br>**Files 20 invoices** into a new folder and opens it — **20 s** | <img src="assets/scene-2-vat.jpg" alt="VAT summary PDF"><br>**Builds the month's VAT summary** as a PDF, exact to the cent — **11 s** |
+| <img src="assets/scene-3-form.jpg" alt="Filling a web form"><br>**Fills a 14-field web form**, stops before sending — **2.6 s** | <img src="assets/scene-4-tool.jpg" alt="Reusing a tool it wrote itself"><br>**Reuses a tool it wrote itself** — 4 photos resized in **1.4 s** |
+
+<sub>Measured on the filmed take, MacBook Pro M4 Pro, model running locally. Test data are fictitious. Details: <a href="demo/README.md">demo script</a>.</sub>
+
+### Why it matters
+
+- **Private by construction.** Your files, mail and accounts never go to a data center: the intelligence comes to the data, not the other way round.
+- **No per-request cloud bill.** Once installed, every task costs electricity on a laptop.
+- **Gets faster with use.** Routine steps move from the model to verified code and self-written tools — the **×47** speed-up when Nown replays a tool it built itself is measured, not projected.
+- **Safety you can test.** Every send asks first (26/26), booby-trapped pages fail (14/14), and the test suite catches 362/362 deliberately broken variants.
 
 > **Research goal — AGI in your pocket.** General intelligence at the level of the best frontier models, first on an ordinary computer, then on a smartphone, working even offline.
 > This is a research objective. It has not been achieved, and nothing in this repository claims otherwise.
-
-[Website](https://hugoai.fr) · [Demo video](https://hugoai.fr/media/nown-demo-v15.mp4) ([script](demo/README.md)) · [Results](benchmarks/RESULTS.md) · [Methodology](docs/METHODOLOGY.md) · [Roadmap](ROADMAP.md)
 
 ---
 
@@ -31,13 +64,17 @@ Nown is our first experimental system: a local agent that operates a computer.
 
 **Hardware for every result:** MacBook Pro, Apple M4 Pro, 24 GB unified memory. No cloud inference.
 
-```
- user request ──► harness ──► 27B model (plans, decides)
-                     │               │
-                     │               ▼ tool call
-                     └──────► verified core ──► files / apps / browser
-                                     │
-                                     └──► on-disk / on-page verification ──► answer
+```mermaid
+flowchart LR
+  U([Your request]) --> H[Agent harness]
+  H --> M[27B model<br/>plans and decides]
+  M -- tool call --> C[Verified core]
+  H --> C
+  C --> A[Files · apps · browser]
+  C --> V{On-disk / on-page<br/>verification}
+  V --> R([One-sentence answer])
+  C -. writes and tests .-> T[(Self-written tools)]
+  T -. instant replay .-> C
 ```
 
 ## Headline results (September 2026)
@@ -95,7 +132,7 @@ Details: [docs/METHODOLOGY.md](docs/METHODOLOGY.md).
 
 ## Demo
 
-A 60-second, real-time, single-take video on the laptop: filing 20 invoices, producing a VAT summary, and filling a supplier quote form without sending it. Supplier and invoices are fictitious test data. See [demo/README.md](demo/README.md).
+A 2 min 43 video filmed on the laptop: filing 20 invoices, a VAT summary PDF, a web form filled but not sent, a tool Nown wrote and reuses, and the Nown bar. Fictitious test data, real timings. Watch it [here](https://hugoai.fr/media/nown-demo-v15.mp4); full script in [demo/README.md](demo/README.md).
 
 ## Roadmap
 
@@ -111,6 +148,10 @@ See [ROADMAP.md](ROADMAP.md).
 This repository documents our research: thesis, architecture at a high level, measurements, methodology and selected experiments. **It does not contain the Nown product source, prompts, internal safety rules, or proprietary runtime parameters.**
 
 ## Contact
+
+<a id="contact"></a>
+**Investors and partners:** we are raising to turn Nown into a full research lab — compute, a first team, and time. Let's talk.
+
 
 Hugo Sulfour, founder and technical lead. [hugoai.fr](https://hugoai.fr) · hugosulfour.contact@gmail.com
 
