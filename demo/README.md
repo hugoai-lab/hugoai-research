@@ -1,6 +1,6 @@
 # Demo
 
-**Video (2 min 41 s):** https://hugoai.fr/media/nown-demo-v14.mp4
+**Video (2 min 43 s):** https://hugoai.fr/media/nown-demo-v15.mp4
 
 Filmed on 10 October 2026 on a MacBook Pro (Apple M4 Pro, 24 GB), with the model running locally — no cloud inference. Test data are fictitious; every duration shown on screen is measured on the take itself. The model's thinking time is shown accelerated where labelled ("accéléré ×N"); typing and actions are shown in real time.
 
@@ -16,7 +16,7 @@ Filmed on 10 October 2026 on a MacBook Pro (Apple M4 Pro, 24 GB), with the model
 | 4 | Resize the images of the folder *Photos-Vacances* to 1600 px | recognises a task it already knows and replays **a tool it wrote itself** (script tested on a copy before touching real files) | tool replay 1.4 s (4 photos, 15.2 MB → 1.5 MB) |
 | 5 | — | the Nown bar: always on top of every app, movable, transparency adjustable down to invisible | — |
 
-**Closing.** It doesn't just answer — it acts. Files, applications, the web: the whole computer, with your consent. Missing a tool? It writes it itself. It codes too, from inside the computer, like a person — only faster. On an ordinary computer, without the cloud; your data stays with you.
+**Closing.** It doesn't just answer — it acts. Files, applications, the web: the whole computer, with your consent. Missing a tool? It writes it itself. It codes too, from inside the computer, like a person — only faster. On an ordinary computer, without the cloud; your data stays with you. Anything that can be driven digitally comes within reach. Last slide: **Nown — artificial general assistant.**
 
 ## Honesty notes
 

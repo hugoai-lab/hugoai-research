@@ -5,7 +5,7 @@
 > **Research goal — AGI in your pocket.** General intelligence at the level of the best frontier models, first on an ordinary computer, then on a smartphone, working even offline.
 > This is a research objective. It has not been achieved, and nothing in this repository claims otherwise.
 
-[Website](https://hugoai.fr) · [Demo video](https://hugoai.fr/media/nown-demo-v14.mp4) ([script](demo/README.md)) · [Results](benchmarks/RESULTS.md) · [Methodology](docs/METHODOLOGY.md) · [Roadmap](ROADMAP.md)
+[Website](https://hugoai.fr) · [Demo video](https://hugoai.fr/media/nown-demo-v15.mp4) ([script](demo/README.md)) · [Results](benchmarks/RESULTS.md) · [Methodology](docs/METHODOLOGY.md) · [Roadmap](ROADMAP.md)
 
 ---
 
