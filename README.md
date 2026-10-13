@@ -2,7 +2,9 @@
 
 <h1 align="center">HugoAI Research</h1>
 
-<p align="center"><b>An AI research lab building general intelligence that runs on the computer you already own — locally, privately, fast.</b></p>
+<p align="center"><b>An AI research lab aiming to surpass today’s leading AI — on your devices, in the cloud, and ultimately inside future phone and computer chips.</b></p>
+
+<p align="center"><b>Current evidence: Nown on a laptop</b></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/runs-100%25%20local-0b101e?style=flat-square" alt="100% local">
@@ -14,6 +16,24 @@
 </p>
 
 <p align="center"><a href="https://hugoai.fr">Website</a> · <a href="https://hugoai.fr/media/nown-demo-v15.mp4">Demo video</a> · <a href="demo/README.md">Demo script</a> · <a href="benchmarks/RESULTS.md">Results</a> · <a href="docs/METHODOLOGY.md">Methodology</a> · <a href="ROADMAP.md">Roadmap</a> · <a href="#contact">Contact</a></p>
+
+---
+
+## Our ambition
+
+**Build AI more capable than today’s best systems:** intelligence that understands, reasons, acts and completes complex work. Nown is our first working system and a foundation for this research; it is not evidence that we have already surpassed the leading AI models.
+
+We are pursuing three complementary horizons:
+
+| Horizon | What we aim to build | Current status |
+|---|---|---|
+| **Local AI** | Intelligence running on an ordinary computer, then a phone, including offline operation. For locally executed tasks, processing stays on the device. | Nown already demonstrates local execution on a Mac. Leading-model performance and phone deployment remain research goals. |
+| **Cloud AI** | An online version that makes HugoAI accessible without relying on the computing power of the user’s device. | Development ambition; no cloud product or cloud benchmark is claimed here. |
+| **Native intelligence in future chips** | Long-term integration into the chips of future phones and computers, with intelligence designed into the hardware. | Research horizon; no chip integration or manufacturer partnership is claimed. |
+
+**The aim is to go beyond today’s best AI, with both local and cloud versions, then pursue hardware integration.** These are ambitions, not demonstrated results. The measurements below describe the current Nown prototype.
+
+[Lire cette vision en français](docs/VISION.fr.md) · [Research roadmap](ROADMAP.md)
 
 ---
 
@@ -30,15 +50,15 @@
 
 <sub>Measured on the filmed take, MacBook Pro M4 Pro, model running locally. Test data are fictitious. Details: <a href="demo/README.md">demo script</a>.</sub>
 
-### Why it matters
+### Why the current local prototype matters
 
 - **Private by construction.** Your files, mail and accounts never go to a data center: the intelligence comes to the data, not the other way round.
 - **No per-request cloud bill.** Once installed, every task costs electricity on a laptop.
 - **Gets faster with use.** Routine steps move from the model to verified code and self-written tools — the **×47** speed-up when Nown replays a tool it built itself is measured, not projected.
 - **Safety you can test.** Every send asks first (26/26), booby-trapped pages fail (14/14), and the test suite catches 362/362 deliberately broken variants.
 
-> **Research goal — AGI in your pocket.** General intelligence at the level of the best frontier models, first on an ordinary computer, then on a smartphone, working even offline.
-> This is a research objective. It has not been achieved, and nothing in this repository claims otherwise.
+> **Research goal — beyond today’s leading AI.** More capable general intelligence, in local and cloud versions, with a long-term ambition to integrate it into future device chips.
+> Nown’s local results are a starting point. Superior general capability, the cloud version and chip integration have not been demonstrated by the results in this repository.
 
 ---
 
@@ -48,7 +68,7 @@ Frontier capability is usually bought with scale: more parameters, more data cen
 
 1. **Most agent time is not thinking.** It is re-reading context, calling tools, and recovering from mistakes. Each is a measurable cost that can be removed.
 2. **Only use the model where a model is needed.** If a step can be executed deterministically and verified, it should cost zero generated tokens.
-3. **Measure on the target device.** Every number here comes from one laptop, end to end, with the model, tools and verification included.
+3. **Measure the complete system.** Every current number here comes from one laptop, end to end, with the model, tools and verification included. Future cloud and hardware work must be evaluated separately, with its own conditions and evidence.
 
 ## Current evidence: Nown
 
@@ -139,7 +159,8 @@ A 2 min 43 video filmed on the laptop: filing 20 invoices, a VAT summary PDF, a 
 1. **Now:** a capable local agent on a laptop, with measured safety.
 2. **Next:** whole-system efficiency. Reliable computer use and coding, faster decode on the same hardware, fewer model calls per task.
 3. **Then:** less memory per unit of intelligence. New weight representations, learned shortcuts for routine steps, smaller models where they hold up.
-4. **Goal:** AGI in your pocket.
+4. **Capability goal:** surpass today’s leading AI, with local execution on computers and phones, plus an online cloud version.
+5. **Long-term hardware horizon:** pursue direct integration into future phone and computer chips.
 
 See [ROADMAP.md](ROADMAP.md).
 
@@ -150,7 +171,7 @@ This repository documents our research: thesis, architecture at a high level, me
 ## Contact
 
 <a id="contact"></a>
-**Investors and partners:** we are raising to turn Nown into a full research lab — compute, a first team, and time. Let's talk.
+**Investors and partners:** we are raising to turn Nown into a full research lab — compute, a first team, and research time. Our ambition is more capable AI in local and cloud versions, with a long-term path toward native hardware integration. Let's talk.
 
 
 Hugo Sulfour, founder and technical lead. [hugoai.fr](https://hugoai.fr) · hugosulfour.contact@gmail.com
